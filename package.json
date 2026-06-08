@@ -1,7 +1,7 @@
 {
-  "name": "app-pet",
+  "name": "app-book-backend",
   "version": "1.0.0",
-  "description": "Backend para o app Diário Pet",
+  "description": "Backend para o app de Gerenciamento de Livros",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
