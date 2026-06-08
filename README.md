@@ -1,11 +1,10 @@
-# Minha Estante - Backend API
+# Minha Estante - Backend API (In-Memory)
 
-Esta é uma API REST desenvolvida com Node.js, Express e MongoDB para gerenciar uma coleção de livros.
+Esta é uma API REST desenvolvida com Node.js e Express para gerenciar uma coleção de livros. Esta versão utiliza armazenamento em memória para facilitar a execução sem a necessidade de configurar um banco de dados externo.
 
 ## Requisitos
 
 - Node.js instalado
-- MongoDB rodando localmente ou uma URI do MongoDB Atlas
 
 ## Instalação
 
@@ -17,13 +16,6 @@ Esta é uma API REST desenvolvida com Node.js, Express e MongoDB para gerenciar 
 2. Instale as dependências:
    ```bash
    npm install
-   ```
-
-3. Configure as variáveis de ambiente:
-   Crie um arquivo `.env` na raiz com:
-   ```env
-   PORT=3000
-   MONGO_URI=mongodb://localhost:27017/book_app
    ```
 
 ## Execução
@@ -42,3 +34,5 @@ A API estará disponível em `http://localhost:3000`.
 - `POST /api/books`: Cadastra um novo livro
 - `PUT /api/books/:id`: Atualiza um livro existente
 - `DELETE /api/books/:id`: Remove um livro
+
+> **Nota:** Por utilizar armazenamento em memória, os dados serão resetados sempre que o servidor for reiniciado.
